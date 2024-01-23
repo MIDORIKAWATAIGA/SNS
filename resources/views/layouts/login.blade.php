@@ -33,6 +33,10 @@
                     <li><a href="/logout">ログアウト</a></li>
                 </ul>
             </div>
+            <div class="menu-trigger">
+              <span></span>
+              <span></span>
+            </div>
         </div>
     </header>
     <div id="row">
@@ -58,7 +62,7 @@
     </div>
     <footer>
     </footer>
-    <script src="JavaScriptファイルのURL"></script>
-    <script src="JavaScriptファイルのURL"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
