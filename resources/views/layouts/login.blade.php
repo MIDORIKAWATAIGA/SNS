@@ -27,6 +27,11 @@
                 <div id="">
                     <p>{{ Auth::user()-> username}}さん<img src="images/arrow.png"></p>
                 <div>
+            <!-- アコーディオンメニュー -->
+            <div class="menu-trigger">
+              <span></span>
+              <span></span>
+            </div>
                 <nav class="menu">
                     <ul class="menu-list">
                         <li><a href="/top">ホーム</a></li>
@@ -35,11 +40,6 @@
                     </ul>
                   </p>
                 </nav>
-            </div>
-            <!-- アコーディオンメニュー -->
-            <div class="menu-trigger">
-              <span></span>
-              <span></span>
             </div>
         </div>
     </header>
