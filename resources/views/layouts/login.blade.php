@@ -27,12 +27,16 @@
                 <div id="">
                     <p>{{ Session('username') }}さん<img src="images/arrow.png"></p>
                 <div>
-                <ul>
-                    <li><a href="/top">ホーム</a></li>
-                    <li><a href="/profile">プロフィール</a></li>
-                    <li><a href="/logout">ログアウト</a></li>
-                </ul>
+                <nav class="menu">
+                    <ul class="menu-list">
+                        <li><a href="/top">ホーム</a></li>
+                        <li><a href="/profile">プロフィール</a></li>
+                        <li><a href="/logout">ログアウト</a></li>
+                    </ul>
+                  </p>
+                </nav>
             </div>
+            <!-- アコーディオンメニュー -->
             <div class="menu-trigger">
               <span></span>
               <span></span>

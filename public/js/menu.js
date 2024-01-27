@@ -7,8 +7,12 @@ $(function () {
             $(".menu-trigger").removeClass("active");
         }
     });
-    $(".nav-wrapper ul li a").click(function () {
+    $(".menu ul li a").click(function () {
         $(".menu-trigger").removeClass("active");
         $(".menu-trigger").removeClass("active");
     });
+});
+
+$(".menu-trigger").click(function () {
+    $("ul").slideToggle();
 });
