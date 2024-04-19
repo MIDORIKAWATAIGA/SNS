@@ -66,6 +66,26 @@ header{
     display: none;
   }
 
+  .post_button {
+    display: block;
+    background-image: url(../images/post.png);
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 25%;
+  }
+
+  .icon {
+    display: block;
+    background-image: url(../images/icon1.png);
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+    border-radius: 50%;
+  }
+
     /* .menu {
     display: block;
     position: fixed;
