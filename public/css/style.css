@@ -66,6 +66,10 @@ header{
     display: none;
   }
 
+  .content {
+    text-align: center;
+  }
+
   .post_button {
     display: block;
     background-image: url(../images/post.png);
