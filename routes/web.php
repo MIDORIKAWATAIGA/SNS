@@ -34,7 +34,8 @@ Route::post('/added', 'Auth\RegisterController@added');
 Route::group(['middleware' => ['loginUserCheck']], function() {
 
 Route::get('/top','PostsController@index');
-Route::post('/top','PostsController@index')->name('posts');
+
+Route::post('/top','PostsController@create')->name('posts');
 
 Route::get('/profile','UsersController@profile');
 

@@ -14,9 +14,10 @@
     <!-- ここにアイコンのHTMLを挿入 -->
 </div>
 
-<form action="posts" method="post">
-
+<form action="{{ route('posts') }}" method="post">
+  @csrf
   <textarea name="posts" placeholder="投稿内容を入力してください"></textarea>
+
 
   <button type="submit" class="post_button"></button>
 
