@@ -40,6 +40,8 @@ Route::post('/top','PostsController@create')->name('posts');
 Route::get('/profile','UsersController@profile');
 
 Route::get('/search','UsersController@search');
+Route::post('/search', 'UsersController@search')->name('users.search');
+
 
 //フォローリスト
 Route::get('/follow-list','PostsController@followList');
