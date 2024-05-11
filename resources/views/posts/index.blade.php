@@ -31,6 +31,8 @@
     <p>{{ $post->created_at}}</p>
 </div>
 
+<a href="/top/{{$post->id}}/post"onclick="return confirm('この投稿を削除します。よろしいでしょうか？')"><img src="images/trash.png"></a>
+
 @endforeach
 
 @endsection

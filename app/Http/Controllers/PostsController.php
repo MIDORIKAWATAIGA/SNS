@@ -26,11 +26,8 @@ class PostsController extends Controller
         return view('posts.index',['posts' => $posts]);
     }
 
-    public function followerList(){
-        return view('follows.followerList');
-    }
-
-    public function followList(){
-        return view('follows.followList');
+    public function delete($id){
+        Post::where('id', $id)->delete();
+        return redirect('/top');
     }
 }
