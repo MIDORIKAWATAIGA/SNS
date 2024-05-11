@@ -40,7 +40,7 @@
                   </p>
                 </nav>
                 <div id="user_icon">
-                    <img src= "{{ asset('images/'.$post->user->images) }}" class = post_img>
+                    <img src= "{{ asset('images/'.auth()->user()->images) }}" class = post_img>
                 <div>
             </div>
         </div>
