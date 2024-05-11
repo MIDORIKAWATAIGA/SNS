@@ -26,12 +26,13 @@
 
 @foreach ($posts as $post)
 <div>
+    <img src= "{{ asset('images/'.$post->user->images) }}" class=post_img>
     <p>{{ $post->user->username }}</p>
     <p>{{ $post->post }}</p>
     <p>{{ $post->created_at}}</p>
 </div>
 
-<a href="/top/{{$post->id}}/post"onclick="return confirm('この投稿を削除します。よろしいでしょうか？')"><img src="images/trash.png"></a>
+<a class=delete href="/top/{{$post->id}}/post"onclick="return confirm('この投稿を削除します。よろしいでしょうか？')"><img src="images/trash.png"></a>
 
 @endforeach
 

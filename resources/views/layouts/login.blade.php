@@ -22,11 +22,10 @@
 <body>
     <header>
         <div id = "head">
-        <h1><a href="/top"><img src="images/logo.png"></a></h1>
-            <div id="">
-                <div id="">
-                    <p>{{ Auth::user()-> username}}さん<img src="images/arrow.png"></p>
-                <div>
+        <a href="/top"><img src="images/atlas.png" class = atlas_img></a>
+            <div id="my_name">
+              <p>{{ Auth::user()-> username}}さん</p>
+            </div>
             <!-- アコーディオンメニュー -->
             <div class="menu-trigger">
               <span></span>
@@ -40,6 +39,9 @@
                     </ul>
                   </p>
                 </nav>
+                <div id="user_icon">
+                    <img src= "{{ asset('images/'.$post->user->images) }}" class = post_img>
+                <div>
             </div>
         </div>
     </header>
