@@ -22,27 +22,24 @@
 <body>
     <header>
         <div id = "head">
-        <a href="/top"><img src="images/atlas.png" class = atlas_img></a>
-            <div id="my_name">
-              <p>{{ Auth::user()-> username}}さん</p>
-            </div>
-            <!-- アコーディオンメニュー -->
+            <a href="/top"><img src="images/atlas.png" class = atlas_img></a>
+        </div>
+        <div id="my_name">
+            <p>{{ Auth::user()-> username}}さん</p>
             <div class="menu-trigger">
-              <span></span>
-              <span></span>
-            </div>
+                <span></span>
+                <span></span>
                 <nav class="menu">
                     <ul class="menu-list">
-                        <li><a href="/top">ホーム</a></li>
-                        <li><a href="/profile">プロフィール</a></li>
-                        <li><a href="/logout">ログアウト</a></li>
+                    <li><a href="/top">HOME</a></li>
+                    <li><a style="color:#fff;" href="/profile">プロフィール編集</a></li>
+                    <li><a href="/logout">ログアウト</a></li>
                     </ul>
-                  </p>
                 </nav>
-                <div id="user_icon">
-                    <img src= "{{ asset('images/'.auth()->user()->images) }}" class = post_img>
-                <div>
             </div>
+            <div id="user_icon">
+                <img src= "{{ asset('images/'.auth()->user()->images) }}" class = post_img>
+            <div>
         </div>
     </header>
     <div id="row">

@@ -25,4 +25,23 @@ class UsersController extends Controller
     }
         return view('users.search',compact('users','search_word'));
     }
+
+    public function updateProfile(Request $request)
+    {
+        $id = $request->input('id');
+        $username = $request->input('username');
+        $mail = $request->input('mail');
+        $password = $request->input('password');
+        $bio = $request->input('bio');
+
+        User::where('id', $id)->update([
+            'username' => $username,
+            'mail' => $mail,
+            'password' => Hash::make($request->password),
+            'bio' => $bio,
+
+        ]);
+
+        return redirect('/top');
+    }
 }

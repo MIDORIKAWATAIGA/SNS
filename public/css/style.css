@@ -7,32 +7,26 @@ body{
 header{
     background:#186AC9;
     display: flex;
-    height: 9rem;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-header{
+head{
     display: flex;
 }
 
-#user_icon{
-    position: absolute;
-    top: 30px;
-    right: 10px;
-
-}
-
 #my_name{
-    position: absolute;
-    width: 100px;
+    width: 270px;
     height: 40px;
-    top: 60px;
-    right: 200px;
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .atlas_img{
-    width: 150px;
-    margin-top: 30px;
+    width: 100px;
     margin-left: 10px;
 }
 
@@ -80,7 +74,6 @@ header{
     width: 30px;
     height: 42px;
     cursor: pointer;
-    top: 45px;
     right: 150px;
   }
 
@@ -96,9 +89,32 @@ header{
   .menu-list {
     display: none;
     position: absolute;
-    top: 90px;
-    right: 85px;
+    top: 51px;
+    right: -150px;
+    width: 188px;
+    text-align: center;
+    border: solid 1px black;
   }
+
+  .menu-list li {
+    padding: 15px 34px 15px 54px;
+    background-color: #fff;
+    color:#727272;
+  }
+
+  .menu-list li:nth-child(2) {
+    background-color: #186AC9;
+    color: #fff;
+  }
+
+  .menu-list a {
+    text-decoration: none;
+    color: #727272;
+  }
+
+    .menu-list li a:nth-child(2) {
+      color: #fff;
+    }
 
   .content {
     text-align: center;
@@ -138,6 +154,10 @@ header{
     height: 50px;
     margin-right: 50px;
     border-radius: 50%;
+  }
+
+  .post {
+    display: flex;
   }
 
     /* .menu {
